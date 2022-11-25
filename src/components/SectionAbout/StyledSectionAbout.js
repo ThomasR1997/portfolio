@@ -1,0 +1,29 @@
+// Libraries
+import styled from "styled-components";
+
+// Color and position of about section
+export const StyledSectionAbout = styled.div`
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media only screen and (max-width: 1170px) {
+    flex-wrap: wrap;
+  }
+`;
+
+// Padding for the image and about me text
+export const StyledDiv = styled.div`
+  padding-left: ${(prop) => (prop.left ? "11em" : prop.right ? "4em" : null)};
+  padding-right: ${(prop) => (prop.right ? "11em" : prop.left ? "4em" : null)};
+
+  @media only screen and (max-width: 1170px) {
+    padding: 1em 5em;
+  }
+`;
+
+// Image styling
+export const StyledImg = styled.img`
+  height: 30em;
+`;
