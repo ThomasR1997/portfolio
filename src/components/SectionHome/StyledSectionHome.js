@@ -13,10 +13,10 @@ export const StyledSectionHome = styled.div`
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
+  background-size: cover;
 
   // test
   /* position: relative; */
-  /* background-size: cover; */
   /* background-repeat: no-repeat; */
 `;
 

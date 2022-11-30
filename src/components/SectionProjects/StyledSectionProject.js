@@ -10,9 +10,12 @@ import {
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
 
+export const StyledDiv = styled.div`
+  background-color: ${(props) => (props.light ? "#EBEBEB" : "#0A1930")};
+`;
 // Styling and different sizes for the project carousel
 export const StyledSlider = styled(Slider)`
-  background-color: #3a6ea5;
+  background: ${(props) => (props.light ? "#3a6ea5" : "#515659")};
   margin: 0 21.875em;
   padding-bottom: 60px;
 
@@ -40,14 +43,14 @@ export const StyledImg = styled.img`
 
 // Styling for arrow icons for the carousel
 export const LeftArrow = styled(BsFillArrowLeftCircleFill)`
-  fill: #3a6ea5;
+  fill: ${(props) => (props.light ? "#3a6ea5" : "#515659")};
   height: 50px;
   width: 50px;
   margin-left: -50px;
 `;
 
 export const RightArrow = styled(BsFillArrowRightCircleFill)`
-  fill: #3a6ea5;
+  fill: ${(props) => (props.light ? "#3a6ea5" : "#515659")};
   height: 50px;
   width: 50px;
   margin-right: -50px;

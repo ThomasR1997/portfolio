@@ -9,6 +9,7 @@ import { SiJavascript } from "react-icons/si";
 // Color and position of the skills section
 export const StyledSectionSkills = styled.div`
   background-color: #ebebeb;
+  background: ${(props) => (props.light ? "#ebebeb" : "#0A1930")};
   display: flex;
   justify-content: center;
   align-items: center;

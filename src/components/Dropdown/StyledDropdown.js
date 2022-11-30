@@ -11,8 +11,8 @@ export const StyledDropdown = styled.div`
 export const StyledDropdownContent = styled.div`
   display: none;
   position: absolute;
-  background-color: #3a6ea5;
-  min-width: 7em;
+  background: ${(props) => (props.light ? "#3a6ea5" : "#0A1930")};
+  min-width: 5em;
   padding: 2em;
 `;
 
@@ -20,7 +20,7 @@ export const StyledDropdownContent = styled.div`
 export const StyledButton = styled.button`
   border: none;
   background-color: transparent;
-  color: white;
+  color: ${(props) => (props.light ? "#fff" : "#64FFDA")};
   font-size: 13px;
   cursor: pointer;
   display: block;
@@ -32,7 +32,10 @@ export const StyledButton = styled.button`
 
 // Styles for dropdown text
 export const StyledP = styled.p`
-  color: white;
+  color: ${(props) => (props.light ? "#fff" : "#64FFDA")};
   font-size: 13px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

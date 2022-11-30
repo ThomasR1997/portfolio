@@ -7,9 +7,15 @@ import {
   StyledSectionSkills,
 } from "./StyledSectionSkills";
 
+// Hooks
+import { useContext } from "react";
+import { DarkModeContext } from "../../contextState/DarkModeContext";
+
 export const SectionSkills = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <StyledSectionSkills name="skills">
+    <StyledSectionSkills light={!darkMode ? true : false} name="skills">
       <HtmlIcon />
       <CssIcon />
       <JsIcon />

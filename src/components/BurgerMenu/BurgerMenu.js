@@ -1,38 +1,50 @@
 // Styled components
-import { IconDiv, StyledLink } from "../NavBar/StyledNavBar";
-import { GitHubIcon, DiscordIcon } from "../NavBar/StyledNavBar";
+import {
+  GitHubIcon,
+  DiscordIcon,
+  IconDiv,
+  StyledLink,
+} from "../StyledComponents";
 
 // Libraries
 import { slide as Menu } from "react-burger-menu";
 import MediaQuery from "react-responsive";
+import { useTranslation } from "react-i18next";
+import { Dropdown } from "../Dropdown/Dropdown";
 
 // React-burger-menu library
 // The burgermenu replaces the navbar for small screens
 export const BurgerMenu = () => {
+  const { t } = useTranslation();
+
   return (
     <MediaQuery maxWidth={811}>
       <Menu styles={styles}>
         <StyledLink to="home" spy={true} smooth={true} offset={-100}>
-          Hjem
+          {t("Nav Home")}
         </StyledLink>
 
         <StyledLink to="about" spy={true} smooth={true} offset={-100}>
-          Om meg
+          {t("Nav About me")}
         </StyledLink>
 
         <StyledLink to="skills" spy={true} smooth={true} offset={-100}>
-          Ferdigheter
+          {t("Nav Skills")}
         </StyledLink>
 
         <StyledLink to="projects" spy={true} smooth={true} offset={-100}>
-          Prosjekter
+          {t("Nav Projects")}
         </StyledLink>
 
         <StyledLink to="contact" spy={true} smooth={true} offset={-100}>
-          Kontakt
+          {t("Nav Contact me")}
         </StyledLink>
 
         <IconDiv>
+          <div>
+            <Dropdown />
+          </div>
+
           <a
             href={"https://github.com/hftjutyir"}
             target={"_blank"}

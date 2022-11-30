@@ -1,12 +1,24 @@
 // Styled components
-import { DiscordIcon, GitHubIcon } from "../NavBar/StyledNavBar";
+import { DiscordIcon, GitHubIcon } from "../StyledComponents";
 import { MailIcon, StyledFooter, StyledP } from "./StyledFooter";
 
+// Libraries
+import { useTranslation } from "react-i18next";
+
+// Hooks
+import { useContext } from "react";
+import { DarkModeContext } from "../../contextState/DarkModeContext";
+
 export const Footer = () => {
+  const { t } = useTranslation();
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <StyledFooter name="contact">
+    <StyledFooter light={!darkMode ? true : false} name="contact">
       <div>
-        <StyledP>Kontakt meg</StyledP>
+        <StyledP light={!darkMode ? true : false}>
+          {t("Nav Contact me")}
+        </StyledP>
       </div>
 
       <div>
@@ -16,7 +28,7 @@ export const Footer = () => {
       </div>
 
       <div>
-        <StyledP>Laget av Thomas Kodehode</StyledP>
+        <StyledP light={!darkMode ? true : false}>{t("Footer Text")}</StyledP>
       </div>
 
       <div>

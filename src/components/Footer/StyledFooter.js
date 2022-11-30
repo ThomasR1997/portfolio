@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 // Position, size and color of the footer
 export const StyledFooter = styled.div`
-  background-color: #3a6ea5;
+  background: ${(props) => (props.light ? "#3a6ea5" : "#0A1930")};
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -14,7 +14,7 @@ export const StyledFooter = styled.div`
 
 // Color of footer text
 export const StyledP = styled.p`
-  color: white;
+  color: ${(props) => (props.light ? "#fff" : "#64FFDA")};
 `;
 
 // Color and size of the Email icon

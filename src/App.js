@@ -10,41 +10,62 @@ import { SimpleSlider } from "./components/SectionProjects/SectionProjects";
 import { Footer } from "./components/Footer/Footer";
 import { BurgerMenu } from "./components/BurgerMenu/BurgerMenu";
 
+// Styled components
 import {
   StyledSectionTitle,
   StyledTitle,
 } from "./components/SectionTitle/StyledSectionTitle";
 
+// Libraries
+import { useTranslation } from "react-i18next";
+
+// Hooks
+import { useState } from "react";
+import { DarkModeContext } from "./contextState/DarkModeContext";
+
 function App() {
+  // Enables translation
+  const { t } = useTranslation();
+  // For dark and light mode
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="App">
-      <BurgerMenu />
-      <NavBar />
+    <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
+      <div className="App">
+        <BurgerMenu />
+        <NavBar />
 
-      <SectionHome />
+        <SectionHome />
 
-      <StyledSectionTitle>
-        <StyledTitle>Om meg</StyledTitle>
-      </StyledSectionTitle>
+        <StyledSectionTitle light={!darkMode ? true : false}>
+          <StyledTitle light={!darkMode ? true : false}>
+            {t("Section About Title")}
+          </StyledTitle>
+        </StyledSectionTitle>
 
-      <SectionAbout />
+        <SectionAbout />
 
-      <StyledSectionTitle>
-        <StyledTitle>Ferdigheter</StyledTitle>
-      </StyledSectionTitle>
+        <StyledSectionTitle light={!darkMode ? true : false}>
+          <StyledTitle light={!darkMode ? true : false}>
+            {t("Section Skills Title")}
+          </StyledTitle>
+        </StyledSectionTitle>
 
-      <SectionSkills />
+        <SectionSkills />
 
-      <StyledSectionTitle>
-        <StyledTitle>Prosjekter</StyledTitle>
-      </StyledSectionTitle>
+        <StyledSectionTitle light={!darkMode ? true : false}>
+          <StyledTitle light={!darkMode ? true : false}>
+            {t("Section Projects Title")}
+          </StyledTitle>
+        </StyledSectionTitle>
 
-      <SimpleSlider />
+        <SimpleSlider />
 
-      <StyledSectionTitle />
+        <StyledSectionTitle light={!darkMode ? true : false} />
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </DarkModeContext.Provider>
   );
 }
 

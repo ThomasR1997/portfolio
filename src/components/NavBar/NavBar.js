@@ -1,38 +1,77 @@
 // Styled components
-import {
-  DiscordIcon,
-  GitHubIcon,
-  StyledNavBar,
-  StyledLink,
-} from "./StyledNavBar";
+import { DiscordIcon, GitHubIcon, StyledLink } from "../StyledComponents";
+import { StyledNavBar } from "./StyledNavBar";
 
 // Libraries
 import MediaQuery from "react-responsive";
+import { Dropdown } from "../Dropdown/Dropdown";
+import { useTranslation } from "react-i18next";
+
+// Hooks
+import { useContext } from "react";
+import { DarkModeContext } from "../../contextState/DarkModeContext";
 
 // Replaces burgermenu with navbar on desktops
 const NavBar = () => {
+  const { t } = useTranslation();
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
     <MediaQuery minWidth={811}>
-      <StyledNavBar>
+      <StyledNavBar light={!darkMode ? true : false}>
         <div>
-          <StyledLink to="home" spy={true} smooth={true} offset={-100}>
-            Hjem
+          <Dropdown />
+        </div>
+
+        <div>
+          <StyledLink
+            light={!darkMode ? true : false}
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+          >
+            {t("Nav Home")}
           </StyledLink>
 
-          <StyledLink to="about" spy={true} smooth={true} offset={-200}>
-            Om meg
+          <StyledLink
+            light={!darkMode ? true : false}
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-200}
+          >
+            {t("Nav About me")}
           </StyledLink>
 
-          <StyledLink to="skills" spy={true} smooth={true} offset={-200}>
-            Ferdigheter
+          <StyledLink
+            light={!darkMode ? true : false}
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-200}
+          >
+            {t("Nav Skills")}
           </StyledLink>
 
-          <StyledLink to="projects" spy={true} smooth={true} offset={-200}>
-            Prosjekter
+          <StyledLink
+            light={!darkMode ? true : false}
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-200}
+          >
+            {t("Nav Projects")}
           </StyledLink>
 
-          <StyledLink to="contact" spy={true} smooth={true} offset={-200}>
-            Kontakt meg
+          <StyledLink
+            light={!darkMode ? true : false}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-200}
+          >
+            {t("Nav Contact me")}
           </StyledLink>
         </div>
 

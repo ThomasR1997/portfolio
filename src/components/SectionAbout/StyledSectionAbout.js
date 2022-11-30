@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // Color and position of about section
 export const StyledSectionAbout = styled.div`
-  background-color: #ebebeb;
+  background: ${(props) => (props.light ? "#EBEBEB" : "#0A1930")};
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -25,5 +25,10 @@ export const StyledDiv = styled.div`
 
 // Image styling
 export const StyledImg = styled.img`
-  height: 30em;
+  height: auto;
+  width: 100%;
+`;
+
+export const StyledP = styled.p`
+  color: ${(props) => (props.light ? "#000" : "#fff")};
 `;
