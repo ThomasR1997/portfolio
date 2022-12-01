@@ -4,7 +4,7 @@ import styled from "styled-components";
 // Images
 import home from "../../images/home.jpg";
 
-// Styling and parallax effect for home section
+// Styling, position and parallax effect for home section
 export const StyledSectionHome = styled.div`
   background-image: url(${home});
   background-position: center;

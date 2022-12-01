@@ -40,6 +40,7 @@ export const SettingsIcon = styled(CiSettings)`
   height: 24px;
   width: 24px;
   cursor: pointer;
+  transform: translate(10%, 15%);
 `;
 
 // Flex div for icons

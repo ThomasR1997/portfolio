@@ -41,9 +41,7 @@ export const BurgerMenu = () => {
         </StyledLink>
 
         <IconDiv>
-          <div>
-            <Dropdown />
-          </div>
+          <Dropdown />
 
           <a
             href={"https://github.com/hftjutyir"}
