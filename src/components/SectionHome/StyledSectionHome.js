@@ -17,6 +17,10 @@ export const StyledSectionHome = styled.div`
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
+  @media only screen and (max-width: 580px) {
+    background-attachment: scroll;
+  }
 `;
 
 // Styling for home section header
