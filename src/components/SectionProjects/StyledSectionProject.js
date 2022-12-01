@@ -23,9 +23,15 @@ export const StyledSlider = styled(Slider)`
     margin: 0 auto;
     width: 28em;
   }
+
   @media only screen and (max-width: 600px) {
     margin: 0 auto;
     width: 18.75em;
+  }
+
+  @media only screen and (max-width: 308px) {
+    margin: 0 auto;
+    width: 10em;
   }
 `;
 
@@ -33,11 +39,17 @@ export const StyledSlider = styled(Slider)`
 export const StyledImg = styled.img`
   margin: 0 auto;
   width: 37.5em;
+
   @media only screen and (max-width: 1300px) {
     width: 22em;
   }
+
   @media only screen and (max-width: 600px) {
     width: 14em;
+  }
+
+  @media only screen and (max-width: 308px) {
+    width: 7em;
   }
 `;
 

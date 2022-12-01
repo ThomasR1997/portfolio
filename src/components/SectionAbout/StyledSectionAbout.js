@@ -29,6 +29,7 @@ export const StyledImg = styled.img`
   width: 100%;
 `;
 
+// Paragraph color
 export const StyledP = styled.p`
   color: ${(props) => (props.light ? "#000" : "#fff")};
 `;

@@ -16,27 +16,34 @@ import {
   StyledSlider,
 } from "./StyledSectionProject";
 
+// Libraries
+import MediaQuery from "react-responsive";
+
 // React-slick carousel/slider library
 // Button handlers and slides settings
 export const SimpleSlider = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   const PrevButton = ({ className, onClick, style }) => (
-    <LeftArrow
-      light={!darkMode ? true : false}
-      className={className}
-      onClick={onClick}
-      style={{ ...style }}
-    />
+    <MediaQuery minWidth={500}>
+      <LeftArrow
+        light={!darkMode ? true : false}
+        className={className}
+        onClick={onClick}
+        style={{ ...style }}
+      />
+    </MediaQuery>
   );
 
   const NextButton = ({ className, onClick, style }) => (
-    <RightArrow
-      light={!darkMode ? true : false}
-      className={className}
-      onClick={onClick}
-      style={{ ...style }}
-    />
+    <MediaQuery minWidth={500}>
+      <RightArrow
+        light={!darkMode ? true : false}
+        className={className}
+        onClick={onClick}
+        style={{ ...style }}
+      />
+    </MediaQuery>
   );
   const settings = {
     dots: true,

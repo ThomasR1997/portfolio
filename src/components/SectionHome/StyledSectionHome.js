@@ -14,10 +14,9 @@ export const StyledSectionHome = styled.div`
   align-items: center;
   background-attachment: fixed;
   background-size: cover;
-
-  // test
-  /* position: relative; */
-  /* background-repeat: no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 `;
 
 // Styling for home section header
