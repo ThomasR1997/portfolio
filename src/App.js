@@ -16,12 +16,10 @@ import {
   StyledTitle,
 } from "./components/SectionTitle/StyledSectionTitle";
 
-// Libraries
-import { useTranslation } from "react-i18next";
-
 // Hooks
 import { useState } from "react";
 import { DarkModeContext } from "./contextState/DarkModeContext";
+import { useTranslation } from "react-i18next";
 
 function App() {
   // Enables translation

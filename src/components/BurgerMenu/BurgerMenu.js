@@ -9,8 +9,12 @@ import {
 // Libraries
 import { slide as Menu } from "react-burger-menu";
 import MediaQuery from "react-responsive";
-import { useTranslation } from "react-i18next";
+
+// Components
 import { Dropdown } from "../Dropdown/Dropdown";
+
+// Hooks
+import { useTranslation } from "react-i18next";
 
 // React-burger-menu library
 // The burgermenu replaces the navbar for small screens

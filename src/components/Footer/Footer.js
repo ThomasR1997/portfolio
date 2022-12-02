@@ -2,12 +2,10 @@
 import { DiscordIcon, GitHubIcon } from "../StyledComponents";
 import { MailIcon, StyledFooter, StyledP } from "./StyledFooter";
 
-// Libraries
-import { useTranslation } from "react-i18next";
-
 // Hooks
 import { useContext } from "react";
 import { DarkModeContext } from "../../contextState/DarkModeContext";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
   const { t } = useTranslation();

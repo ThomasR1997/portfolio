@@ -20,17 +20,17 @@ const resources = {
       "Section About Title": "About me",
 
       "Section About Text One":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper interdum proin purus ornare neque facilisis. Morbi sollicitudin senectus convallis tellus at dolor arcu mauris. Quis tincidunt eleifend mi, quis posuere ornare velit egestas ut. Sapien, id sollicitudin lobortis eget elit facilisis.",
+        "Hello, my name is Thomas and I am 25 years old. I am a front-end developer who attends the Kodehode course. I find coding interesting, I like creating websites and apps. I enjoy solving problems.",
 
       "Section About Text Two":
-        "Pharetra pellentesque elit hac amet, porta nec etiam. Senectus sed nisl adipiscing egestas sed cursus sed quam. Bibendum facilisis ut arcu in felis, ac. Orci, quis eu id commodo lacus massa nunc. Sit cursus pellentesque felis eget sed. Quam nisi velit viverra facilisis sed ac pellentesque libero gravida.",
+        "In my spare time I am a gamer who is very fond of RPGs and online FPS games. I have been told that I am precise and reliable.",
 
       "Section Skills Title": "Skills",
 
       "Section Projects Title": "Projects",
 
       "Footer Contact me": "Contact me",
-      "Footer Text": "Designed and built by Thomas Kodehode",
+      "Footer Text": "Designed and built by Thomas Rustad",
     },
   },
   no: {
@@ -50,17 +50,17 @@ const resources = {
       "Section About Title": "Om meg",
 
       "Section About Text One":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper interdum proin purus ornare neque facilisis. Morbi sollicitudin senectus convallis tellus at dolor arcu mauris. Quis tincidunt eleifend mi, quis posuere ornare velit egestas ut. Sapien, id sollicitudin lobortis eget elit facilisis.",
+        "Hei, mitt navn er Thomas og jeg er 25 år. Jeg er en front-end utvikler som deltar på kurs Kodehode. Koding syns jeg er interessant, jeg liker å lage nettsider og apper. Det å løse problemer syns jeg også er kjekt.",
 
       "Section About Text Two":
-        "Pharetra pellentesque elit hac amet, porta nec etiam. Senectus sed nisl adipiscing egestas sed cursus sed quam. Bibendum facilisis ut arcu in felis, ac. Orci, quis eu id commodo lacus massa nunc. Sit cursus pellentesque felis eget sed. Quam nisi velit viverra facilisis sed ac pellentesque libero gravida.",
+        "På fritiden er jeg en gamer som er veldig glad i RPGs og online FPS spill. Jeg har fått høre at jeg er presis og pålitelig.",
 
       "Section Skills Title": "Ferdigheter",
 
       "Section Projects Title": "Prosjekter",
 
       "Footer Contact me": "Kontakt meg",
-      "Footer Text": "Laget av Thomas Kodehode",
+      "Footer Text": "Laget av Thomas Rustad",
     },
   },
 };

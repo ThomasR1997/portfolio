@@ -5,11 +5,11 @@ import { StyledNavBar } from "./StyledNavBar";
 // Libraries
 import MediaQuery from "react-responsive";
 import { Dropdown } from "../Dropdown/Dropdown";
-import { useTranslation } from "react-i18next";
 
 // Hooks
 import { useContext } from "react";
 import { DarkModeContext } from "../../contextState/DarkModeContext";
+import { useTranslation } from "react-i18next";
 
 // Replaces burgermenu with navbar on desktops
 const NavBar = () => {

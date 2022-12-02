@@ -17,6 +17,7 @@ export const StyledSectionAbout = styled.div`
 export const StyledDiv = styled.div`
   padding-left: ${(prop) => (prop.left ? "11em" : prop.right ? "4em" : null)};
   padding-right: ${(prop) => (prop.right ? "11em" : prop.left ? "4em" : null)};
+  width: fit-content;
 
   @media only screen and (max-width: 1170px) {
     padding: 1em 5em;

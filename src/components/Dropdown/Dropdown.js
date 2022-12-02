@@ -1,19 +1,22 @@
 // Hooks
 import { useContext, useState } from "react";
 import { DarkModeContext } from "../../contextState/DarkModeContext";
+import { useTranslation } from "react-i18next";
 
 // Styled components
 import {
   StyledButton,
   StyledDropdown,
   StyledDropdownContent,
+  StyledInput,
+  StyledLabel,
   StyledP,
+  StyledSwitch,
 } from "./StyledDropdown";
 
 import { SettingsIcon } from "../StyledComponents";
 
 // Libraries
-import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 import MediaQuery from "react-responsive";
 
@@ -33,7 +36,7 @@ export const Dropdown = () => {
   };
 
   // Toggle between dark and light mode
-  const handleToggle = () => {
+  const handleChange = () => {
     setDarkMode(!darkMode);
   };
 
@@ -57,12 +60,15 @@ export const Dropdown = () => {
         </StyledP>
 
         <MediaQuery minWidth={811}>
-          <StyledButton
-            light={!darkMode ? true : false}
-            onClick={() => handleToggle()}
-          >
+          <StyledLabel htmlFor="checkbox" light={!darkMode ? true : false}>
+            <StyledInput
+              type="checkbox"
+              id="checkbox"
+              onChange={handleChange}
+            />
+            <StyledSwitch />
             {t("Nav Settings Dark Mode")}
-          </StyledButton>
+          </StyledLabel>
         </MediaQuery>
 
         <StyledP light={!darkMode ? true : false}>

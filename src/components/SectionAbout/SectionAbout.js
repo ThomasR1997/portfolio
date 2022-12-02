@@ -7,14 +7,13 @@ import {
 } from "./StyledSectionAbout";
 
 // Images
-import me from "../../images/me.png";
-
-// Libraries
-import { useTranslation } from "react-i18next";
+import me from "../../images/me.JPG";
+// import me from "../../images/me.png";
 
 // Hooks
 import { useContext } from "react";
 import { DarkModeContext } from "../../contextState/DarkModeContext";
+import { useTranslation } from "react-i18next";
 
 const SectionAbout = () => {
   const { t } = useTranslation();
