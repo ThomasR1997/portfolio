@@ -8,7 +8,6 @@ import {
 
 // Images
 import me from "../../images/me.JPG";
-// import me from "../../images/me.png";
 
 // Hooks
 import { useContext } from "react";
