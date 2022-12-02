@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d4d1cc20.css",
-    "main.js": "/portfolio/static/js/main.967d08f8.js",
+    "main.js": "/portfolio/static/js/main.cf5ff99d.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/me.JPG": "/portfolio/static/media/me.9acf201f4467e731c2a7.JPG",
     "static/media/albertWeskerQuotes.png": "/portfolio/static/media/albertWeskerQuotes.52639f9944fb7f6af80a.png",
     "static/media/home.jpg": "/portfolio/static/media/home.d417d392798219e0397c.jpg",
     "static/media/paulAllanCard.png": "/portfolio/static/media/paulAllanCard.6d9e40a186226754da47.png",
-    "static/media/me.png": "/portfolio/static/media/me.f6c46ee071b4bb1f3a89.png",
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.d4d1cc20.css.map": "/portfolio/static/css/main.d4d1cc20.css.map",
-    "main.967d08f8.js.map": "/portfolio/static/js/main.967d08f8.js.map",
+    "main.cf5ff99d.js.map": "/portfolio/static/js/main.cf5ff99d.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4d1cc20.css",
-    "static/js/main.967d08f8.js"
+    "static/js/main.cf5ff99d.js"
   ]
 }
