@@ -77,7 +77,7 @@ const NavBar = () => {
 
         <div>
           <a
-            href={"https://github.com/hftjutyir"}
+            href={"https://github.com/ThomasR1997"}
             target={"_blank"}
             rel={"noreferrer"}
           >

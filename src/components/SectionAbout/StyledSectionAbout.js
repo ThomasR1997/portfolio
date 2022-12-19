@@ -28,6 +28,7 @@ export const StyledDiv = styled.div`
 export const StyledImg = styled.img`
   height: auto;
   width: 100%;
+  border-radius: 5px;
 `;
 
 // Paragraph color
