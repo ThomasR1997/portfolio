@@ -15,7 +15,7 @@ export const SectionSkills = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <StyledSectionSkills light={!darkMode ? true : false} name="skills">
+    <StyledSectionSkills light={!darkMode ? 1 : 0} name="skills">
       <HtmlIcon />
       <CssIcon />
       <JsIcon />

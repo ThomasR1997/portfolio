@@ -25,7 +25,7 @@ function App() {
   // Enables translation
   const { t } = useTranslation();
   // For dark and light mode
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(0);
 
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
@@ -35,31 +35,31 @@ function App() {
 
         <SectionHome />
 
-        <StyledSectionTitle light={!darkMode ? true : false}>
-          <StyledTitle light={!darkMode ? true : false}>
+        <StyledSectionTitle light={!darkMode ? 1 : 0}>
+          <StyledTitle light={!darkMode ? 1 : 0}>
             {t("Section About Title")}
           </StyledTitle>
         </StyledSectionTitle>
 
         <SectionAbout />
 
-        <StyledSectionTitle light={!darkMode ? true : false}>
-          <StyledTitle light={!darkMode ? true : false}>
+        <StyledSectionTitle light={!darkMode ? 1 : 0}>
+          <StyledTitle light={!darkMode ? 1 : 0}>
             {t("Section Skills Title")}
           </StyledTitle>
         </StyledSectionTitle>
 
         <SectionSkills />
 
-        <StyledSectionTitle light={!darkMode ? true : false}>
-          <StyledTitle light={!darkMode ? true : false}>
+        <StyledSectionTitle light={!darkMode ? 1 : 0}>
+          <StyledTitle light={!darkMode ? 1 : 0}>
             {t("Section Projects Title")}
           </StyledTitle>
         </StyledSectionTitle>
 
         <SimpleSlider />
 
-        <StyledSectionTitle light={!darkMode ? true : false} />
+        <StyledSectionTitle light={!darkMode ? 1 : 0} />
 
         <Footer />
       </div>

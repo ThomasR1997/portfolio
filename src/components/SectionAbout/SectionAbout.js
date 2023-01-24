@@ -19,17 +19,17 @@ const SectionAbout = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <StyledSectionAbout light={!darkMode ? true : false} name="about">
+    <StyledSectionAbout light={!darkMode ? 1 : 0} name="about">
       <StyledDiv left>
         <StyledImg src={me} alt="This is me" />
       </StyledDiv>
 
       <StyledDiv right>
-        <StyledP light={!darkMode ? true : false}>
+        <StyledP light={!darkMode ? 1 : 0}>
           {t("Section About Text One")}
         </StyledP>
 
-        <StyledP light={!darkMode ? true : false}>
+        <StyledP light={!darkMode ? 1 : 0}>
           {t("Section About Text Two")}
         </StyledP>
       </StyledDiv>

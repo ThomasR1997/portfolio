@@ -52,15 +52,13 @@ export const Dropdown = () => {
       </StyledButton>
 
       <StyledDropdownContent
-        light={!darkMode ? true : false}
+        light={!darkMode ? 1 : 0}
         style={{ display: display }}
       >
-        <StyledP light={!darkMode ? true : false}>
-          {t("Nav Settings Header")}
-        </StyledP>
+        <StyledP light={!darkMode ? 1 : 0}>{t("Nav Settings Header")}</StyledP>
 
         <MediaQuery minWidth={811}>
-          <StyledLabel htmlFor="checkbox" light={!darkMode ? true : false}>
+          <StyledLabel htmlFor="checkbox" light={!darkMode ? 1 : 0}>
             <StyledInput
               type="checkbox"
               id="checkbox"
@@ -71,18 +69,18 @@ export const Dropdown = () => {
           </StyledLabel>
         </MediaQuery>
 
-        <StyledP light={!darkMode ? true : false}>
+        <StyledP light={!darkMode ? 1 : 0}>
           {t("Nav Settings Languages")}
         </StyledP>
         <StyledButton
-          light={!darkMode ? true : false}
+          light={!darkMode ? 1 : 0}
           onClick={() => changeLanguage("en")}
         >
           English
         </StyledButton>
 
         <StyledButton
-          light={!darkMode ? true : false}
+          light={!darkMode ? 1 : 0}
           onClick={() => changeLanguage("no")}
         >
           Norsk

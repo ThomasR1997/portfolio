@@ -30,7 +30,7 @@ export const SimpleSlider = () => {
   const PrevButton = ({ className, onClick, style }) => (
     <MediaQuery minWidth={500}>
       <LeftArrow
-        light={!darkMode ? true : false}
+        light={!darkMode ? 1 : 0}
         className={className}
         onClick={onClick}
         style={{ ...style }}
@@ -41,7 +41,7 @@ export const SimpleSlider = () => {
   const NextButton = ({ className, onClick, style }) => (
     <MediaQuery minWidth={500}>
       <RightArrow
-        light={!darkMode ? true : false}
+        light={!darkMode ? 1 : 0}
         className={className}
         onClick={onClick}
         style={{ ...style }}
@@ -59,14 +59,14 @@ export const SimpleSlider = () => {
   };
 
   return (
-    <StyledDiv light={!darkMode ? true : false}>
-      <StyledSlider light={!darkMode ? true : false} {...settings}>
+    <StyledDiv light={!darkMode ? 1 : 0}>
+      <StyledSlider light={!darkMode ? 1 : 0} {...settings}>
         <div name="projects">
           <StyledH3>Quizzical</StyledH3>
           <a
             href="https://thomasr1997.github.io/quizzical/"
-            target={"_blank"}
-            rel={"noreferrer"}
+            target="_blank"
+            rel="noreferrer"
           >
             <StyledImg src={project1} alt="Quiz project" />
           </a>
@@ -75,8 +75,8 @@ export const SimpleSlider = () => {
           <StyledH3>Countdown to Christmas</StyledH3>
           <a
             href="https://thomasr1997.github.io/christmas-countdown/"
-            target={"_blank"}
-            rel={"noreferrer"}
+            target="_blank"
+            rel="noreferrer"
           >
             <StyledImg src={project2} alt="Countdown to Christmas project" />
           </a>
@@ -86,8 +86,8 @@ export const SimpleSlider = () => {
           <StyledH3>Fake webstore</StyledH3>
           <a
             href="https://thomasr1997.github.io/fake-webstore/#/men-clothing-page"
-            target={"_blank"}
-            rel={"noreferrer"}
+            target="_blank"
+            rel="noreferrer"
           >
             <StyledImg src={project3} alt="Fake webstore project" />
           </a>
@@ -97,8 +97,8 @@ export const SimpleSlider = () => {
           <StyledH3>Albert Wesker quotes</StyledH3>
           <a
             href="https://thomasr1997.github.io/Albert-Wesker/"
-            target={"_blank"}
-            rel={"noreferrer"}
+            target="_blank"
+            rel="noreferrer"
           >
             <StyledImg src={project4} alt="Albert Wesker quotes project" />
           </a>
@@ -108,8 +108,8 @@ export const SimpleSlider = () => {
           <StyledH3>Paul Allan's card</StyledH3>
           <a
             href="https://thomasr1997.github.io/Paul-Allen-s-card/"
-            target={"_blank"}
-            rel={"noreferrer"}
+            target="_blank"
+            rel="noreferrer"
           >
             <StyledImg src={project5} alt="Paul Allan's card project" />
           </a>

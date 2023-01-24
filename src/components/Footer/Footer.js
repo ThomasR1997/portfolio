@@ -12,11 +12,9 @@ export const Footer = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <StyledFooter light={!darkMode ? true : false} name="contact">
+    <StyledFooter light={!darkMode ? 1 : 0} name="contact">
       <div>
-        <StyledP light={!darkMode ? true : false}>
-          {t("Nav Contact me")}
-        </StyledP>
+        <StyledP light={!darkMode ? 1 : 0}>{t("Nav Contact me")}</StyledP>
       </div>
 
       <div>
@@ -26,7 +24,7 @@ export const Footer = () => {
       </div>
 
       <div>
-        <StyledP light={!darkMode ? true : false}>{t("Footer Text")}</StyledP>
+        <StyledP light={!darkMode ? 1 : 0}>{t("Footer Text")}</StyledP>
       </div>
 
       <div>

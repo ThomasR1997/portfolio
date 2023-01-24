@@ -18,14 +18,14 @@ const NavBar = () => {
 
   return (
     <MediaQuery minWidth={811}>
-      <StyledNavBar light={!darkMode ? true : false}>
+      <StyledNavBar light={!darkMode ? 1 : 0}>
         <div>
           <Dropdown />
         </div>
 
         <div>
           <StyledLink
-            light={!darkMode ? true : false}
+            light={!darkMode ? 1 : 0}
             to="home"
             spy={true}
             smooth={true}
@@ -35,7 +35,7 @@ const NavBar = () => {
           </StyledLink>
 
           <StyledLink
-            light={!darkMode ? true : false}
+            light={!darkMode ? 1 : 0}
             to="about"
             spy={true}
             smooth={true}
@@ -45,7 +45,7 @@ const NavBar = () => {
           </StyledLink>
 
           <StyledLink
-            light={!darkMode ? true : false}
+            light={!darkMode ? 1 : 0}
             to="skills"
             spy={true}
             smooth={true}
@@ -55,7 +55,7 @@ const NavBar = () => {
           </StyledLink>
 
           <StyledLink
-            light={!darkMode ? true : false}
+            light={!darkMode ? 1 : 0}
             to="projects"
             spy={true}
             smooth={true}
@@ -65,7 +65,7 @@ const NavBar = () => {
           </StyledLink>
 
           <StyledLink
-            light={!darkMode ? true : false}
+            light={!darkMode ? 1 : 0}
             to="contact"
             spy={true}
             smooth={true}
