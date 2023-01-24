@@ -27,11 +27,13 @@ export const StyledDiv = styled.div`
 // Image styling
 export const StyledImg = styled.img`
   height: auto;
-  width: 100%;
+  width: 50%;
   border-radius: 5px;
 `;
 
 // Paragraph color
 export const StyledP = styled.p`
   color: ${(props) => (props.light ? "#000" : "#fff")};
+  font-size: 1.25em;
+  line-height: 1.5em;
 `;

@@ -17,7 +17,7 @@ export const StyledDiv = styled.div`
 export const StyledSlider = styled(Slider)`
   background: ${(props) => (props.light ? "#3a6ea5" : "#515659")};
   margin: 0 21.875em;
-  padding-bottom: 60px;
+  padding-bottom: 3.75em;
   border-radius: 5px;
 
   @media only screen and (max-width: 1300px) {

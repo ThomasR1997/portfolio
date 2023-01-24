@@ -3,10 +3,11 @@ import React, { useContext } from "react";
 import { DarkModeContext } from "../../contextState/DarkModeContext";
 
 // Images
-import project1 from "./ProjectsImages/countdownToChristmas.png";
-import project2 from "./ProjectsImages/fakeWebstore.png";
-import project3 from "./ProjectsImages/albertWeskerQuotes.png";
-import project4 from "./ProjectsImages/paulAllanCard.png";
+import project1 from "./ProjectsImages/quizzical.png";
+import project2 from "./ProjectsImages/countdownToChristmas.png";
+import project3 from "./ProjectsImages/fakeWebstore.png";
+import project4 from "./ProjectsImages/albertWeskerQuotes.png";
+import project5 from "./ProjectsImages/paulAllanCard.png";
 
 // Styled components
 import {
@@ -61,13 +62,23 @@ export const SimpleSlider = () => {
     <StyledDiv light={!darkMode ? true : false}>
       <StyledSlider light={!darkMode ? true : false} {...settings}>
         <div name="projects">
+          <StyledH3>Quizzical</StyledH3>
+          <a
+            href="https://thomasr1997.github.io/quizzical/"
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <StyledImg src={project1} alt="Quiz project" />
+          </a>
+        </div>
+        <div name="projects">
           <StyledH3>Countdown to Christmas</StyledH3>
           <a
             href="https://thomasr1997.github.io/christmas-countdown/"
             target={"_blank"}
             rel={"noreferrer"}
           >
-            <StyledImg src={project1} alt="Countdown to Christmas project" />
+            <StyledImg src={project2} alt="Countdown to Christmas project" />
           </a>
         </div>
 
@@ -78,7 +89,7 @@ export const SimpleSlider = () => {
             target={"_blank"}
             rel={"noreferrer"}
           >
-            <StyledImg src={project2} alt="Fake webstore project" />
+            <StyledImg src={project3} alt="Fake webstore project" />
           </a>
         </div>
 
@@ -89,7 +100,7 @@ export const SimpleSlider = () => {
             target={"_blank"}
             rel={"noreferrer"}
           >
-            <StyledImg src={project3} alt="Albert Wesker quotes project" />
+            <StyledImg src={project4} alt="Albert Wesker quotes project" />
           </a>
         </div>
 
@@ -100,7 +111,7 @@ export const SimpleSlider = () => {
             target={"_blank"}
             rel={"noreferrer"}
           >
-            <StyledImg src={project4} alt="Paul Allan's card project" />
+            <StyledImg src={project5} alt="Paul Allan's card project" />
           </a>
         </div>
       </StyledSlider>
