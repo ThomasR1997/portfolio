@@ -16,9 +16,10 @@ export const StyledDiv = styled.div`
 // Styling and different sizes for the project carousel
 export const StyledSlider = styled(Slider)`
   background: ${(props) => (props.light ? "#3a6ea5" : "#515659")};
-  margin: 0 21.875em;
+  margin: 0 auto;
   padding-bottom: 3.75em;
   border-radius: 5px;
+  width: 48%;
 
   @media only screen and (max-width: 1300px) {
     margin: 0 auto;
