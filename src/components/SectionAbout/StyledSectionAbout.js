@@ -22,6 +22,10 @@ export const StyledDiv = styled.div`
   @media only screen and (max-width: 1170px) {
     padding: 1em 5em;
   }
+
+  @media only screen and (max-width: 455px) {
+    padding: 0.25em 1.25em;
+  }
 `;
 
 // Image styling
@@ -29,6 +33,18 @@ export const StyledImg = styled.img`
   height: auto;
   width: 50%;
   border-radius: 5px;
+
+  @media only screen and (max-width: 1170px) {
+    width: 25%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: 455px) {
+    width: 50%;
+  }
 `;
 
 // Paragraph color
@@ -36,4 +52,8 @@ export const StyledP = styled.p`
   color: ${(props) => (props.light ? "#000" : "#fff")};
   font-size: 1.25em;
   line-height: 1.5em;
+
+  @media only screen and (max-width: 455px) {
+    font-size: 1em;
+  }
 `;
