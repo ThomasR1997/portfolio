@@ -6,8 +6,8 @@ import { DarkModeContext } from "../../contextState/DarkModeContext";
 import project1 from "./ProjectsImages/quizzical.png";
 import project2 from "./ProjectsImages/countdownToChristmas.png";
 import project3 from "./ProjectsImages/fakeWebstore.png";
-import project4 from "./ProjectsImages/albertWeskerQuotes.png";
-import project5 from "./ProjectsImages/paulAllanCard.png";
+import project4 from "./ProjectsImages/colorScheme.png";
+import project5 from "./ProjectsImages/albertWeskerQuotes.png";
 
 // Styled components
 import {
@@ -94,24 +94,24 @@ export const SimpleSlider = () => {
         </div>
 
         <div name="projects">
+          <StyledH3>Color scheme generator</StyledH3>
+          <a
+            href="https://thomasr1997.github.io/color-scheme-generator/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <StyledImg src={project4} alt="Color scheme generator project" />
+          </a>
+        </div>
+
+        <div name="projects">
           <StyledH3>Albert Wesker quotes</StyledH3>
           <a
             href="https://thomasr1997.github.io/Albert-Wesker/"
             target="_blank"
             rel="noreferrer"
           >
-            <StyledImg src={project4} alt="Albert Wesker quotes project" />
-          </a>
-        </div>
-
-        <div name="projects">
-          <StyledH3>Paul Allan's card</StyledH3>
-          <a
-            href="https://thomasr1997.github.io/Paul-Allen-s-card/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <StyledImg src={project5} alt="Paul Allan's card project" />
+            <StyledImg src={project5} alt="Albert Wesker quotes project" />
           </a>
         </div>
       </StyledSlider>
