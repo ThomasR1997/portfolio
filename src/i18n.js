@@ -20,7 +20,7 @@ const resources = {
       "Section About Title": "About me",
 
       "Section About Text One":
-        "Hello, my name is Thomas and I am 25 years old. I am a front-end developer who attends the Kodehode course. I find coding interesting, I like creating websites and apps. I enjoy solving problems.",
+        "Hello, my name is Thomas and I am 26 years old. I am a front-end developer who attends the Kodehode course. I find coding interesting, I like creating websites and apps. I enjoy solving problems.",
 
       "Section About Text Two":
         "In my spare time I am a gamer who is very fond of RPGs and online FPS games. I have been told that I am precise and reliable.",
@@ -50,7 +50,7 @@ const resources = {
       "Section About Title": "Om meg",
 
       "Section About Text One":
-        "Hei, mitt navn er Thomas og jeg er 25 år. Jeg er en front-end utvikler som deltar på kurs Kodehode. Koding syns jeg er interessant, jeg liker å lage nettsider og apper. Det å løse problemer syns jeg også er kjekt.",
+        "Hei, mitt navn er Thomas og jeg er 26 år. Jeg er en front-end utvikler som deltar på kurs Kodehode. Koding syns jeg er interessant, jeg liker å lage nettsider og apper. Det å løse problemer syns jeg også er kjekt.",
 
       "Section About Text Two":
         "På fritiden er jeg en gamer som er veldig glad i RPGs og online FPS spill. Jeg har fått høre at jeg er presis og pålitelig.",
