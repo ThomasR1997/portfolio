@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d4d1cc20.css",
-    "main.js": "/portfolio/static/js/main.f1ee7f3c.js",
+    "main.js": "/portfolio/static/js/main.dd14a1a3.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/countdownToChristmas.png": "/portfolio/static/media/countdownToChristmas.93fafeb3d6e197467da1.png",
     "static/media/me.JPG": "/portfolio/static/media/me.1ad3f98bf440ff85fb41.JPG",
     "static/media/movieWatchlist.png": "/portfolio/static/media/movieWatchlist.b3672d8ea9e073e547a6.png",
     "static/media/fakeWebstore.png": "/portfolio/static/media/fakeWebstore.8d3af4a346b2ea4d0742.png",
     "static/media/home.jpg": "/portfolio/static/media/home.d417d392798219e0397c.jpg",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.62dbb8f446e6a4d1f64e.pdf",
     "static/media/colorScheme.png": "/portfolio/static/media/colorScheme.dacbd59c1ffb6eeb34f6.png",
     "static/media/quizzical.png": "/portfolio/static/media/quizzical.35816e6ae1d82f238933.png",
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -16,11 +17,11 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.d4d1cc20.css.map": "/portfolio/static/css/main.d4d1cc20.css.map",
-    "main.f1ee7f3c.js.map": "/portfolio/static/js/main.f1ee7f3c.js.map",
+    "main.dd14a1a3.js.map": "/portfolio/static/js/main.dd14a1a3.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4d1cc20.css",
-    "static/js/main.f1ee7f3c.js"
+    "static/js/main.dd14a1a3.js"
   ]
 }
