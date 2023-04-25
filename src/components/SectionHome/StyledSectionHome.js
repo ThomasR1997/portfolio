@@ -38,6 +38,25 @@ export const StyledH3 = styled.h3`
   text-shadow: 0 0 3px black;
 `;
 
+export const CVDiv = styled.div`
+  background-color: #52b788;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1em 2em;
+  border-radius: 5px;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+`;
+
+export const CVText = styled.h3`
+  color: white;
+  font-size: 24px;
+  text-shadow: 0 0 3px black;
+  margin: 0;
+`;
+
 export const StyledA = styled.a`
   text-decoration: none;
 `;

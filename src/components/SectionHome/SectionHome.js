@@ -1,5 +1,7 @@
 // Styled components
 import {
+  CVDiv,
+  CVText,
   StyledA,
   StyledH1,
   StyledH3,
@@ -19,8 +21,11 @@ const SectionHome = () => {
       <div>
         <StyledH1>Thomas Rustad</StyledH1>
         <StyledH3>{t("Section Home")}</StyledH3>
+
         <StyledA href={CV} download>
-          <StyledH3>{t("Section Home CV")}</StyledH3>
+          <CVDiv>
+            <CVText>{t("Section Home CV")}</CVText>
+          </CVDiv>
         </StyledA>
       </div>
     </StyledSectionHome>
