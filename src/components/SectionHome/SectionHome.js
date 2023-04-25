@@ -1,5 +1,10 @@
 // Styled components
-import { StyledH1, StyledH3, StyledSectionHome } from "./StyledSectionHome";
+import {
+  StyledA,
+  StyledH1,
+  StyledH3,
+  StyledSectionHome,
+} from "./StyledSectionHome";
 
 import CV from "../../files/cv.pdf";
 
@@ -14,9 +19,9 @@ const SectionHome = () => {
       <div>
         <StyledH1>Thomas Rustad</StyledH1>
         <StyledH3>{t("Section Home")}</StyledH3>
-        <a href={CV} download>
+        <StyledA href={CV} download>
           <StyledH3>{t("Section Home CV")}</StyledH3>
-        </a>
+        </StyledA>
       </div>
     </StyledSectionHome>
   );

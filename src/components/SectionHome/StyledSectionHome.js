@@ -37,3 +37,7 @@ export const StyledH3 = styled.h3`
   font-size: 24px;
   text-shadow: 0 0 3px black;
 `;
+
+export const StyledA = styled.a`
+  text-decoration: none;
+`;
