@@ -7,7 +7,7 @@ import project1 from "./ProjectsImages/quizzical.png";
 import project2 from "./ProjectsImages/countdownToChristmas.png";
 import project3 from "./ProjectsImages/fakeWebstore.png";
 import project4 from "./ProjectsImages/colorScheme.png";
-import project5 from "./ProjectsImages/albertWeskerQuotes.png";
+import project5 from "./ProjectsImages/movieWatchlist.png";
 
 // Styled components
 import {
@@ -105,13 +105,13 @@ export const SimpleSlider = () => {
         </div>
 
         <div name="projects">
-          <StyledH3>Albert Wesker quotes</StyledH3>
+          <StyledH3>Movie watchlist</StyledH3>
           <a
-            href="https://thomasr1997.github.io/Albert-Wesker/"
+            href="https://thomasr1997.github.io/movie-watchlist/"
             target="_blank"
             rel="noreferrer"
           >
-            <StyledImg src={project5} alt="Albert Wesker quotes project" />
+            <StyledImg src={project5} alt="Movie watchlist project" />
           </a>
         </div>
       </StyledSlider>
