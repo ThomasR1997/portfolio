@@ -17,6 +17,8 @@ const resources = {
 
       "Section Home": "Front-End Developer",
 
+      "Section Home CV": "Download CV",
+
       "Section About Title": "About me",
 
       "Section About Text One":
@@ -46,6 +48,8 @@ const resources = {
       "Nav Contact me": "Kontakt meg",
 
       "Section Home": "Front-End Utvikler",
+
+      "Section Home CV": "Last ned CV",
 
       "Section About Title": "Om meg",
 
